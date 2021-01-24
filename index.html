@@ -9,11 +9,16 @@
     <title>Concept - Dashboard Template</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-        <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/libs/css/style.css">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 
     <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+
+
+    
 </head>
 
 <body>
@@ -64,9 +69,6 @@
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="product-inventory.html">Inventory</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="product-campaing.html">Campaing</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -152,34 +154,34 @@
                             <!-- ============================================================== -->
                             <!-- sales  -->
                             <!-- ============================================================== -->
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
-                                        <h5 class="text-muted">Target sales for the month</h5>
+                                        <h5 class="text-muted">Target for the month</h5>
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">$12000</h1>
+                                            <h1 class="mb-1">$12,000</h1>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
                                         <h5 class="text-muted">Sold in the month</h5>
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">$6000</h1>
+                                            <h1 class="mb-1">$6,000</h1>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
                                         <h5 class="text-muted">Pending target</h5>
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">$4800</h1>
+                                            <h1 class="mb-1">$4,800</h1>
                                         </div>
 
                                     </div>
@@ -199,7 +201,7 @@
                                 <div class="card">
                                     <h5 class="card-header">Scheduled sales for the current month</h5>
                                     <div class="card-body">
-                                        <div id="morris_donut"></div>
+                                        <div id="morris_donut" style="height: 272px;"></div>
                                 </div>
                                 </div>
                             </div>
@@ -207,18 +209,22 @@
                                 <div class="card">
                                     <h5 class="card-header">Scheduled sales for this day</h5>
                                     <div class="card-body">
-                                     <div id="morris_donut-vemv"></div>
+                                     <div id="morris_donut-vemv" style="height: 272px;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
                                 <div class="card">
                                     <h5 class="card-header">Last 7 days of sales vs average and minimum tatget of the month</h5>
                                     <div class="card-body">
-                                        <div class="ct-chart-line ct-golden-section"></div>
+                                        <div class="ct-chart-line ct-golden-section" style="height: 272px;" ></div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+                            
                         </div>
                     </div>
             </div>
@@ -262,13 +268,18 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     
-
+    <!-- Grafica de donas js -->
     <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
     <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
     <script src="assets/vendor/charts/morris-bundle/Morrisjs.js"></script>
 
     <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
     <script src="assets/vendor/charts/chartist-bundle/Chartistjs.js"></script>
+    <!-- Grafica de lineas js -->
+    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+
 
     <script src="assets/libs/js/main-js.js"></script>
 

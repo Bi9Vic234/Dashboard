@@ -3,8 +3,8 @@
     $(function() {
 
         if ($('.ct-chart-line').length) {
-            let promedioRequerido = 5;
-            let promedioReal = 6;
+            // let promedioRequerido = 5;
+            // let promedioReal = 6;
             new Chartist.Line('.ct-chart-line', {
                 labels: ['1', '2', '3', '4', '5','6','7'],
                 series: [
