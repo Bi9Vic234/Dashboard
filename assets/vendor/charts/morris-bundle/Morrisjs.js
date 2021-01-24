@@ -8,7 +8,7 @@
                 element: 'morris_area',
                 behaveLikeLine: true,
                 data: [
-                    { x: '2011 Q1', y: 4, z: 3 },
+                    { x: '2011 Q1', y: 4, z: 3 },  
                     { x: '2011 Q2', y: 2, z: 1 },
                     { x: '2011 Q3', y: 2, z: 3 },
                     { x: '2011 Q4', y: 4, z: 1 }
@@ -16,6 +16,7 @@
                 xkey: 'x',
                 ykeys: ['y', 'z'],
                 labels: ['Y', 'Z'],
+
                  lineColors: ['#5969ff', '#ff407b'],
                    resize: true,
                    gridTextSize: '14px'
@@ -141,19 +142,40 @@
             Morris.Donut({
                 element: 'morris_donut',
                 data: [
-                    { value: 70, label: 'foo' },
-                    { value: 15, label: 'bar' },
-                    { value: 10, label: 'baz' },
-                    { value: 5, label: 'A really really long label' }
+                    { value: 40, label: 'Pending target' },
+                    { value: 10, label: 'In process' },
+                    { value: 50, label: 'Sold' }
                 ],
              
                 labelColor: '#2e2f39',
                    gridTextSize: '14px',
                 colors: [
-                     "#5969ff",
-                                "#ff407b",
-                                "#25d5f2",
-                                "#ffc750"
+                     "#ff407b",  //Red
+                     "#ffc750",  //Yellow
+                     "#2ECC71"   //Green
+                               
+                ],
+
+                formatter: function(x) { return x + "%" },
+                  resize: true
+            });
+        }
+
+        if ($('#morris_donut-vemv').length) {   //Creo una segunda dona.
+            Morris.Donut({
+                element: 'morris_donut-vemv',   //
+                data: [
+                    { value: 80, label: 'Pending target' },
+                    { value: 5, label: 'In process' },
+                    { value: 15, label: 'Sold' }
+                ],
+             
+                labelColor: '#2e2f39',
+                   gridTextSize: '14px',
+                colors: [
+                     "#ff407b",  //Red
+                     "#ffc750",  //Yellow
+                     "#2ECC71"   //Green
                                
                 ],
 

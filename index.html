@@ -9,9 +9,11 @@
     <title>Concept - Dashboard Template</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+        <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/libs/css/style.css">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
         <!-- ============================================================== -->
         <!-- navbar -->
         <!-- ============================================================== -->
-       <div class="dashboard-header">
+        <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top" aria-labelledby="">
                 <a class="navbar-brand" href="../index.html">CONCEPT</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -142,14 +144,92 @@
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h3 class="text-center">Content goes here!</h3>
+                        <h3 class="text-center">This is the products sales status in the curren month MONTH, until today DATE!
+                            
+                        </h3>
                     </div>
-                </div>
+                    <div class="row">
+                            <!-- ============================================================== -->
+                            <!-- sales  -->
+                            <!-- ============================================================== -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Target sales for the month</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$12000</h1>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Sold in the month</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$6000</h1>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Pending target</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$4800</h1>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end sales  -->
+                            <!-- ============================================================== -->
+                            
+                            
+                            
+               
+    
+    
+    
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">Scheduled sales for the current month</h5>
+                                    <div class="card-body">
+                                        <div id="morris_donut"></div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">Scheduled sales for this day</h5>
+                                    <div class="card-body">
+                                     <div id="morris_donut-vemv"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">Last 7 days of sales vs average and minimum tatget of the month</h5>
+                                    <div class="card-body">
+                                        <div class="ct-chart-line ct-golden-section"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <div class="footer">
+                
+        </div>        
+                         
+
+             <!-- ============================================================== -->
+                <!-- footer -->
+             <!-- ============================================================== -->
+             <div class="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -164,11 +244,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- end footer -->
-            <!-- ============================================================== -->
-        </div>
+             </div>
+                <!-- ============================================================== -->
+                <!-- end footer -->
+             <!-- ============================================================== -->
+             
+        
         <!-- ============================================================== -->
         <!-- end main wrapper -->
         <!-- ============================================================== -->
@@ -180,7 +261,18 @@
     <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    
+
+    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/Morrisjs.js"></script>
+
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <script src="assets/vendor/charts/chartist-bundle/Chartistjs.js"></script>
+
     <script src="assets/libs/js/main-js.js"></script>
+
+
 </body>
  
 </html>

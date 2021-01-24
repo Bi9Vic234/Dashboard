@@ -3,12 +3,14 @@
     $(function() {
 
         if ($('.ct-chart-line').length) {
+            let promedioRequerido = 5;
+            let promedioReal = 6;
             new Chartist.Line('.ct-chart-line', {
-                labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                labels: ['1', '2', '3', '4', '5','6','7'],
                 series: [
-                    [12, 9, 7, 8, 5],
-                    [2, 1, 3.5, 7, 3],
-                    [1, 3, 4, 5, 6]
+                    [600, 600, 600, 600, 600, 600, 600],
+                    [400, 400, 400, 400, 400, 400, 400],
+                    [600, 600, 600, 200, 600, 800, 400]
                 ]
             }, {
                 fullWidth: true,
@@ -21,6 +23,8 @@
             });
 
         }
+
+
 
 
         if ($('.ct-chart-holes').length) {
