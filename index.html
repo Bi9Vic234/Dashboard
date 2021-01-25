@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 
     
 </head>
@@ -154,7 +156,7 @@
                             <!-- ============================================================== -->
                             <!-- sales  -->
                             <!-- ============================================================== -->
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
                                         <h5 class="text-muted">Target for the month</h5>
@@ -165,7 +167,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
                                         <h5 class="text-muted">Sold in the month</h5>
@@ -176,7 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="card border-3 border-top border-top-primary">
                                     <div class="card-body">
                                         <h5 class="text-muted">Pending target</h5>
@@ -187,11 +189,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                            <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <h5 class="text-muted">Trend</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$18,800</h1>
+                                        </div>
+                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">50.0%</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <!-- ============================================================== -->
                             <!-- end sales  -->
                             <!-- ============================================================== -->
-                            
-                            
+                                                      
                             
                
     
@@ -201,7 +216,7 @@
                                 <div class="card">
                                     <h5 class="card-header">Scheduled sales for the current month</h5>
                                     <div class="card-body">
-                                        <div id="morris_donut" style="height: 272px;"></div>
+                                        <div id="morris_donut" ></div>
                                 </div>
                                 </div>
                             </div>
@@ -209,15 +224,15 @@
                                 <div class="card">
                                     <h5 class="card-header">Scheduled sales for this day</h5>
                                     <div class="card-body">
-                                     <div id="morris_donut-vemv" style="height: 272px;"></div>
+                                     <div id="morris_donut-vemv" ></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
                                 <div class="card">
                                     <h5 class="card-header">Last 7 days of sales vs average and minimum tatget of the month</h5>
-                                    <div class="card-body">
-                                        <div class="ct-chart-line ct-golden-section" style="height: 272px;" ></div>
+                                    <div class="card-body vemv-card-body">
+                                        <div class="ct-chart-line ct-golden-section" ></div>
                                     </div>
                                 </div>
                             </div>
